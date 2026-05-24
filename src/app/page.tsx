@@ -4,6 +4,8 @@ import Stats from "./components/Stats";
 import Events from "./components/Events";
 import Projects from "./components/Projects";
 import Team from "./components/Team";
+import Join from "./components/Join";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Events />
       <Projects />
       <Team />
+      <Join />
+      <Footer />
     </main>
   );
 }
