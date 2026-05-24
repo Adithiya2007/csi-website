@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Team from "./components/Team";
 import Join from "./components/Join";
 import Footer from "./components/Footer";
+import Chatbot from "./components/Chatbot";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Team />
       <Join />
       <Footer />
+      <Chatbot />
     </main>
   );
 }
