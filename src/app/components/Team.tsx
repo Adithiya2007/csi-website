@@ -1,7 +1,7 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 const team = [
-  { name: "Priyanka", role: "President", domain: "Full Stack", avatar: "AD", color: "from-cyan-400 to-blue-500" },
+  { name: "Priyanka", role: "President", domain: "Full Stack", avatar: "PR", color: "from-cyan-400 to-blue-500" },
   { name: "Tharun", role: "Vice President", domain: "3D & Design", avatar: "TH", color: "from-purple-400 to-pink-500" },
   { name: "Keerthana", role: "Design Lead", domain: "UI/UX", avatar: "KE", color: "from-pink-400 to-rose-500" },
   { name: "Rahul", role: "Tech Lead", domain: "Backend", avatar: "RA", color: "from-green-400 to-cyan-500" },
@@ -17,11 +17,11 @@ export default function Team() {
         <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-14 text-center">
           <span className="text-xs font-mono text-cyan-400 tracking-widest uppercase">// the people</span>
           <h2 className="text-4xl md:text-5xl font-black tracking-tight mt-3 mb-4">Core team</h2>
-          <p className="text-slate-400 text-lg max-w-lg mx-auto">The folks running the show � come say hi.</p>
+          <p className="text-slate-400 text-lg max-w-lg mx-auto">The folks running the show — come say hi.</p>
         </motion.div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {team.map((member, i) => (
-            <motion.div key={member.name} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.08 }} className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500/25">
+            <motion.div key={member.name + i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.08 }} className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500/25">
               <div className={"w-16 h-16 rounded-full mx-auto mb-4 bg-gradient-to-br flex items-center justify-center text-xl font-black text-white " + member.color}>{member.avatar}</div>
               <h3 className="font-bold text-base mb-1">{member.name}</h3>
               <p className="text-xs text-cyan-400 font-mono mb-1">{member.role}</p>
