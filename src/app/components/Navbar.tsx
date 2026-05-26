@@ -9,6 +9,7 @@ const navLinks = [
   { name: "Gallery", href: "/gallery" },
   { name: "Team", href: "/#team" },
   { name: "Blog", href: "/blog" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
